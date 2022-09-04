@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.doga">
+   <children>
+      <TableView fx:id="tablo" layoutX="64.0" layoutY="44.0" onMouseClicked="#tablo_Click" prefHeight="211.0" prefWidth="465.0">
+        <columns>
+          <TableColumn fx:id="etkinlik_adi" prefWidth="127.0" text="ETKİNLİK ADI" />
+          <TableColumn fx:id="duzenleyen" prefWidth="114.0" text="DÜZENLEYEN" />
+            <TableColumn fx:id="tarih" prefWidth="116.0" text="TARİH" />
+            <TableColumn fx:id="top_ad" prefWidth="105.0" text="TOPLULUK" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tablo2" layoutX="34.0" layoutY="414.0" onMouseClicked="#tablo2_Click" prefHeight="244.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="uye_ad" prefWidth="105.0" text="AD" />
+            <TableColumn fx:id="uye_soyad" prefWidth="105.0" text="SOYAD" />
+            <TableColumn fx:id="uye_telefon" prefWidth="103.0" text="TELEFON" />
+            <TableColumn fx:id="uye_top_ad" prefWidth="105.0" text="TOPLULUK ADI" />
+          <TableColumn fx:id="uye_tarih" prefWidth="105.0" text="TARİH" />
+        </columns>
+      </TableView>
+      <Label fx:id="baslik" alignment="CENTER" layoutX="113.0" layoutY="14.0" prefHeight="27.0" prefWidth="367.0" text="DOĞA TOPLULUĞU ETKİNLİKLERİ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="etkinlikekle" layoutX="253.0" layoutY="349.0" mnemonicParsing="false" onAction="#etkinlikekle_Click" prefHeight="25.0" prefWidth="94.0" text="ETKİNLİK EKLE" />
+      <TextField fx:id="ekle_ad" layoutX="48.0" layoutY="263.0" onAction="#ekle_ad_Click" prefHeight="37.0" prefWidth="237.0" promptText="Etkinlik Adı" />
+      <TextField fx:id="ekle_duzenleyen" layoutX="315.0" layoutY="263.0" onAction="#ekle_duzenleyen_Click" prefHeight="37.0" prefWidth="237.0" promptText="Düzenleyen" />
+      <TextField fx:id="ekle_tarih" layoutX="48.0" layoutY="304.0" onAction="#ekle_tarih_Click" prefHeight="37.0" prefWidth="237.0" promptText="Tarih" />
+      <TextField fx:id="ekle_topluluk" layoutX="315.0" layoutY="304.0" onAction="#ekle_topluluk_Click" prefHeight="37.0" prefWidth="237.0" promptText="Topluluk" />
+      <Label alignment="CENTER" layoutX="155.0" layoutY="386.0" prefHeight="22.0" prefWidth="284.0" text="TOPLULUK ÜYELERİ" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="geri" layoutX="239.0" layoutY="661.0" mnemonicParsing="false" onAction="#geri_Click" prefHeight="25.0" prefWidth="123.0" text="GERİ" />
+   </children>
+</AnchorPane>

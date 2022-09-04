@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.uyeler_getir">
+   <children>
+      <TableView fx:id="tablo2" layoutX="38.0" layoutY="50.0" onMouseClicked="#tablo2_Click" prefHeight="413.0" prefWidth="525.0">
+        <columns>
+          <TableColumn fx:id="uye_ad" prefWidth="105.0" text="AD" />
+          <TableColumn fx:id="uye_soyad" prefWidth="105.0" text="SOYAD" />
+            <TableColumn fx:id="uye_telefon" prefWidth="105.0" text="TELEFON" />
+            <TableColumn fx:id="uye_top_ad" prefWidth="103.0" text="TOPLULUK ADI" />
+            <TableColumn fx:id="uye_tarih" prefWidth="105.0" text="TARİH" />
+        </columns>
+      </TableView>
+      <Button fx:id="topluluklara_don" layoutX="38.0" layoutY="507.0" mnemonicParsing="false" onAction="#topluluklaradon_Click" prefHeight="37.0" prefWidth="231.0" text="TOPLULUKLARA DÖN" />
+      <Button fx:id="geri" layoutX="332.0" layoutY="507.0" mnemonicParsing="false" onAction="#geri_Click" prefHeight="37.0" prefWidth="231.0" text="GERİ" />
+   </children>
+</AnchorPane>

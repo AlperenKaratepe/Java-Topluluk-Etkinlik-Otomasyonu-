@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="topluluk" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.topluluklar">
+   <children>
+      <Label alignment="CENTER" layoutX="204.0" layoutY="32.0" prefHeight="36.0" prefWidth="195.0" text="TOPLULUKLAR">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="muzik" layoutX="130.0" layoutY="131.0" mnemonicParsing="false" onAction="#muzik_Click" prefHeight="60.0" prefWidth="100.0" text="MÜZİK" textFill="#1b1b1b" />
+      <Button fx:id="resim" layoutX="252.0" layoutY="131.0" mnemonicParsing="false" onAction="#resim_Click" prefHeight="60.0" prefWidth="100.0" text="RESİM" />
+      <Button fx:id="dans" layoutX="374.0" layoutY="131.0" mnemonicParsing="false" onAction="#dans_Click" prefHeight="60.0" prefWidth="100.0" text="DANS" />
+      <Button fx:id="doga" layoutX="130.0" layoutY="244.0" mnemonicParsing="false" onAction="#doga_Click" prefHeight="60.0" prefWidth="100.0" text="DOĞA" />
+      <Button fx:id="bisiklet" layoutX="252.0" layoutY="244.0" mnemonicParsing="false" onAction="#bisiklet_Click" prefHeight="60.0" prefWidth="100.0" text="BİSİKLET" />
+      <Button fx:id="bilgisayar" layoutX="374.0" layoutY="244.0" mnemonicParsing="false" onAction="#bilgisayar_Click" prefHeight="60.0" prefWidth="100.0" text="BİLGİSAYAR" />
+      <Button fx:id="cikis" layoutX="481.0" layoutY="526.0" mnemonicParsing="false" onAction="#cikis_Click" prefHeight="25.0" prefWidth="69.0" text="CİKİS" />
+      <Label alignment="CENTER" layoutX="66.0" layoutY="79.0" prefHeight="17.0" prefWidth="473.0" text="*TOPLULUK ETKİNLİK OTOMASYONUNA HOŞGELDİNİZ*" />
+   </children>
+</AnchorPane>
